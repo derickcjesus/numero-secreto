@@ -1,7 +1,7 @@
 function verificarSeOChutePossuiUmValorValido(chute) {
 	const numero = +chute;
 
-	if(chuteEhValido(numero)) {
+	if(chuteEhInvalido(numero)) {
 		console.log("Valor inválido")
 	}
 
@@ -10,7 +10,7 @@ function verificarSeOChutePossuiUmValorValido(chute) {
 	}
 }
 
-function chuteEhValido(numero) {
+function chuteEhInvalido(numero) {
 	return Number.isNaN(numero);
 }
 function numeroEhMaiorOuMenorQueOValorPermitido(numero) {
