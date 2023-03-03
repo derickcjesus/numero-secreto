@@ -18,11 +18,23 @@ function verificarSeOChutePossuiUmValorValido(chute) {
 		<h3>O número secreto era ${numeroAleatorio}</h3>
 		`
 	}
+
+	//Condição que indica caso o número falado seja maior ou menor
+	else if(numero > numeroAleatorio) {
+		elementoChute.innerHTML = `
+		<p>O número secreto é menor 👇</p>
+		`
+	} else {
+		elementoChute.innerHTML = `
+		<p>O número secreto é maior ☝</p>
+		`
+	}
 }
 
 function chuteEhInvalido(numero) {
 	return Number.isNaN(numero);
 }
+
 function numeroEhMaiorOuMenorQueOValorPermitido(numero) {
 	return numero > maiorValor || numero < menorValor;
 }
