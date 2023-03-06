@@ -1,5 +1,5 @@
-const menorValor = 5;
-const maiorValor = 110;
+const menorValor = 1;
+const maiorValor = 1000;
 
 function gerarNumeroAleatorio() {
 	return parseInt(Math.random() * maiorValor + 1);
