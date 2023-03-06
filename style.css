@@ -32,6 +32,20 @@ h3 {
     margin-top: 20px;
 }
 
+.btn-jogar {
+    padding: 8px 15px;
+    border: 0;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-jogar:hover {
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
 .mensagem {
     font-size: 1.5em;
     margin-top: 40px;

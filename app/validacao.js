@@ -18,6 +18,10 @@ function verificarSeOChutePossuiUmValorValido(chute) {
 		document.body.innerHTML = `
 		<h2>Você acertou 🎉</h2>
 		<h3>O número secreto era ${numeroAleatorio}</h3>
+
+		<button id="jogar-novamente" class="btn-jogar" onclick="btnJogarNovamente()">
+			Jogar novamente
+		</button>
 		`
 	}else if(numero > numeroAleatorio) {
 		elementoChute.innerHTML = `
@@ -34,4 +38,8 @@ function chuteEhInvalido(numero) {
 
 function numeroEhMaiorOuMenorQueOValorPermitido(numero) {
 	return numero > maiorValor || numero < menorValor;
+}
+
+function btnJogarNovamente() {
+	window.location.reload()
 }
