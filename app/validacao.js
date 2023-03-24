@@ -19,17 +19,17 @@ function verificarSeOChutePossuiUmValorValido(chute) {
 		<h2>Você acertou 🎉</h2>
 		<h3>O número secreto era ${numeroAleatorio}</h3>
 
+    <h3>Você acertou o número secreto em ${quantidadeDeNumerosChutados} tentativas</h3>
+
 		<button id="jogar-novamente" class="btn-jogar" onclick="btnJogarNovamente()">
 			Jogar novamente
 		</button>
 		`;
-
-    console.log(`Você acertou o número em ${quantidadeDeNumerosChutados} tentativas`);
   } else if (numero > numeroAleatorio) {
-    elementoChute.innerHTML = `
+    elementoChute.innerHTML += `
 		<div>O número secreto é menor 👇</div>`;
   } else {
-    elementoChute.innerHTML = `
+    elementoChute.innerHTML += `
 		<div>O número secreto é maior ☝</div>`;
   }
 }
