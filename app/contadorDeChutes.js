@@ -1,7 +1,10 @@
 var quantidadeDeNumerosChutados = 0;
+var numeroDeTentativas = 10;
 
 function contadorDeChutes() {
     ++quantidadeDeNumerosChutados;
+}
 
-    //console.log("Quantidade de chutes: ", quantidadeDeNumerosChutados);
+function removerTentativasChutadas() {
+    --numeroDeTentativas;
 }
