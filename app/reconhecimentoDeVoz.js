@@ -21,9 +21,9 @@ function exibeChuteNaTela(chute) {
   elementoChute.innerHTML = `
 		<div>Você disse</div>
 		<span class="box">${chute}</span>
-	`;
 
-  console.log(`Você só tem mais ${numeroDeTentativas} tentativas de chute`);
+    <div class="tentativas-chutes">E só tem mais ${numeroDeTentativas} tentativas de chute</div>
+	`;
 }
 
 recognition.addEventListener("end", () => recognition.start());
