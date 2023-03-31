@@ -2,9 +2,9 @@ var quantidadeDeNumerosChutados = 0;
 var numeroDeTentativas = 10;
 
 function contadorDeChutes() {
-    ++quantidadeDeNumerosChutados;
+  ++quantidadeDeNumerosChutados;
 }
 
 function removerTentativasChutadas() {
-        --numeroDeTentativas;
+  --numeroDeTentativas;
 }

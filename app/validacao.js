@@ -13,6 +13,14 @@ function verificarSeOChutePossuiUmValorValido(chute) {
     return;
   }
 
+  //Condição quando o número de tentativas de chutes esgotar
+  if (numeroDeTentativas == 0) {
+    document.body.innerHTML = `<h1>GAMER OVER!</h1>
+    <button id="jogar-novamente" class="btn-jogar" onclick="btnJogarNovamente()">
+			Jogar novamente
+		</button>`;
+  }
+
   //Condição caso o número falado seja válido
   if (numero === numeroAleatorio) {
     document.body.innerHTML = `
