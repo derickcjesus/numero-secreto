@@ -6,5 +6,5 @@ function contadorDeChutes() {
 }
 
 function removerTentativasChutadas() {
-    --numeroDeTentativas;
+        --numeroDeTentativas;
 }
