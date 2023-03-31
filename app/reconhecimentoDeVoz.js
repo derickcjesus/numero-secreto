@@ -10,7 +10,6 @@ recognition.addEventListener("result", onSpeak);
 
 function onSpeak(e) {
   const chute = e.results[0][0].transcript;
-  console.log(chute);
   contadorDeChutes();
   removerTentativasChutadas();
   exibeChuteNaTela(chute);
