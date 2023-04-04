@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎮 Número Secreto
 
 ## Descrição do Projeto
